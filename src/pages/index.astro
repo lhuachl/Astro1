@@ -1,16 +1,25 @@
 ---
-
+const pageTitle = "AstroTSXD";
+import Navigation from "../navigation.astro";
 ---
 
 <html lang="en">
 	<head>
 		<a href="/about">about</a>
-		<a href="./about">hola</a>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>AstroTSXD</title>
+		<title>{pageTitle}</title>
+		<style>
+			body {
+				background-color: #ff0055;
+				color: #333;
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 20px;
+			}
+		</style>
 	</head>
 	<body>
 		

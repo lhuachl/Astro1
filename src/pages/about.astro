@@ -1,4 +1,7 @@
 ---
+import Social from "../Social.astro";
+import Navigation from "../navigation.astro";
+const skills = ["JavaScript","TypeScript","React","NodeJs","Git","HTML","CSS","SQL","C#","Python","Basicos de PyTorch","css","Basico tailwindCSS"];
 
 ---
 <html lang="en">
@@ -10,9 +13,18 @@
 		<title>AstroTSXD</title>
 	</head>
 	<body>
+        
         <a href="/index.html">index</a>
         <a href="/blog">blog</a>
 		<h1>H1</h1>
         <p>About de astro</p>
+        <ul>
+            {skills.map((skill) => (
+                <li>{skill}</li>
+            ))}
+        </ul>
+        <Social  platform="twitter" username="..."/>
+        <Social platform="gitHub" username="..."/>
+        <Social platform="linkedin" username="..."/>
 	</body>
 </html>
